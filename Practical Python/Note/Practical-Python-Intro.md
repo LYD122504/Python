@@ -1,5 +1,5 @@
 ---
-title: Pratical Python for dabeaz-Introduction to Python
+title: Pratical Python-Introduction to Python
 date: 2025-09-03 21:39:58
 tags:
     - Computer Science
@@ -9,7 +9,7 @@ categories: Python
 
 本笔记完全基于David Beazley的Python教程-[Practical Python](https://dabeaz-course.github.io/practical-python/Notes/Contents.html).
 
-## 1.1 A First Program
+## A First Program
 
 在交互模式下,Python提供了下划线变量\_,他会保存最后一个表达式的结果,例如:
 
@@ -125,7 +125,7 @@ else:
 
 <a id="orgecc21b8"></a>
 
-## 1.2 Numbers
+## Numbers
 
 Python有三种数字类型:bool,int,float和complex.这里值得注意的是,Python中并没有对浮点数进行进一步分类,而是归为了一类float,因此python中并没有float和double之分.
 

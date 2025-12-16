@@ -1,5 +1,5 @@
 ---
-title: Pratical Python for dabeaz-List, File and Functions
+title: Pratical Python-List, File and Functions
 date: 2025-09-12 19:12:35
 tags:
     - Computer Science
@@ -10,7 +10,7 @@ mathjax: true
 
 本笔记完全基于David Beazley的Python教程-[Practical Python](https://dabeaz-course.github.io/practical-python/Notes/Contents.html).
 
-## 1.5 List
+## List
 
 列表是Python中存储有序值集合的主要类型,用如下的方式创建:
 
@@ -96,7 +96,7 @@ print(names)
 
 <a id="org5172e51"></a>
 
-## 1.6 File Management
+## File Management
 
 打开文件的语法:
 
@@ -153,7 +153,7 @@ with open('outfile','wt') as out:
   print('Hello World',file=out)
 ```
 
-## 1.7 Functions
+## Functions
 
 函数是一系列执行任务并返回结果的语句,需要使用return关键词显式指定函数的返回值.
 

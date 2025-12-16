@@ -1,5 +1,5 @@
 ---
-title: Practical-Python-Collection
+title: Pratical Python-Collection
 date: 2025-10-10 16:42:53
 tags:
     - Computer Science
@@ -10,7 +10,7 @@ mathjax: true
 
 本笔记完全基于David Beazley的Python教程-[Practical Python](https://dabeaz-course.github.io/practical-python/Notes/Contents.html).
 
-## 2.4 Collection module
+## Collection module
 
 collection模块提供了一些用于数据处理的对象.如Counter计数器,defaultdict和deque等.在此我们只介绍这三个对象.
 
@@ -156,7 +156,7 @@ print(d)  # deque([2, 3, 4, 1])
 
 <a id="org97dfeb8"></a>
 
-## 2.5 List Comprehensions
+## List Comprehensions
 
 列表推导式其实就是循环的一种高效写法,他可以视作将操作应用到序列中的每个元素来创建列表.
 

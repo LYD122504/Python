@@ -1,5 +1,5 @@
 ---
-title: Pratical Python for dabeaz-Strings
+title: Pratical Python-Strings
 date: 2025-09-03 21:42:15
 tags:
     - Computer Science
@@ -10,7 +10,7 @@ mathjax: true
 
 本笔记完全基于David Beazley的Python教程-[Practical Python](https://dabeaz-course.github.io/practical-python/Notes/Contents.html).
 
-## 1.3 Strings
+## Strings
 
 Python与C/C++不同在于他并没有char类型,因此对于Python的字符串而言,他可以用单引号或者双引号来引导字符串.Python的字符串通常只能传入单行,遇到换行符会报错;但可以通过三引号来表示多行字符串,例如:
 
@@ -89,7 +89,7 @@ f = s[3:8]    # 'lo wo'
 g = s[-5:]    # 'world'
 ```
 
-Python的字符串操作有+(链接两个字符串),len(求字符串长度),in&not; in(检查子字符串是否在字符串中出现过)和\*(重复字符串):
+Python的字符串操作有+(链接两个字符串),len(求字符串长度),in/not in(检查子字符串是否在字符串中出现过)和\*(重复字符串):
 
 ```python
 # Concatenation

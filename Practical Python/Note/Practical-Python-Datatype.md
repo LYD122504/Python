@@ -1,5 +1,5 @@
 ---
-title: Practical-Python-Datatype
+title: Pratical Python-Datatype
 date: 2025-10-10 16:25:41
 tags:
     - Computer Science
@@ -10,7 +10,7 @@ mathjax: true
 
 本笔记完全基于David Beazley的Python教程-[Practical Python](https://dabeaz-course.github.io/practical-python/Notes/Contents.html).
 
-## 2.1 Datatypes and Data structures
+## Datatypes and Data structures
 
 None类型: None可选或缺失值的占位符.在条件语句中,认为是False.
 

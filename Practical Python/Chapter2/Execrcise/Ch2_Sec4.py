@@ -14,7 +14,7 @@ for n in range(0,10,2):
     if n==8:
         print(n)
         continue
-    print(n,end=' ')
+    print(n,end=' ')x1
 
 # Exercise 2.14 More sequence operations
 data=[4,9,1,25,16,100,49]

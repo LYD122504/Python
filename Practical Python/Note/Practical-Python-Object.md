@@ -1,5 +1,5 @@
 ---
-title: Practical-Python-Object
+title: Pratical Python-Object
 date: 2025-10-10 16:46:53
 tags:
     - Computer Science
@@ -10,7 +10,7 @@ mathjax: true
 
 本笔记完全基于David Beazley的Python教程-[Practical Python](https://dabeaz-course.github.io/practical-python/Notes/Contents.html).
 
-## 2.6 Objects
+## Objects
 
 Python的赋值并非赋实际值,而是创建并赋值引用副本.
 
@@ -21,6 +21,8 @@ c=[a,b]
 ```
 
 这里我们设计了三个变量,但其实底层只有一个列表对象[1,2,3],有四个不同的引用指向他,如果我们修改其中任意一个量,都会导致所有引用的值变化.
+
+<!--more-->
 
 ```python
 b.append(4)

@@ -1,5 +1,5 @@
 ---
-title: Pratical Python for dabeaz-Regular expression
+title: Pratical Python-Regular expression
 date: 2025-09-07 15:52:35
 tags:
     - Computer Science
@@ -8,7 +8,7 @@ categories: Python
 mathjax: true
 ---
 
-## 1.4 Regular Expression
+## Regular Expression
 
 在上一节中提到了Python可以利用字符串的find和index方法来查找字符串,但是这种方法只能查找固定的字符串,也就是精确查找.而我们在正常使用过程中模糊查找其实更为常见,例如查找所有以a开头,以b结尾的字符串,这就需要利用正则表达式来实现搜索.
 

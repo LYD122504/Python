@@ -1,5 +1,5 @@
 ---
-title: Practical-Python-Container
+title: Pratical Python-Container
 date: 2025-10-10 16:39:30
 tags:
     - Computer Science
@@ -10,7 +10,7 @@ mathjax: true
 
 本笔记完全基于David Beazley的Python教程-[Practical Python](https://dabeaz-course.github.io/practical-python/Notes/Contents.html).
 
-## 2.2 Container
+## Container
 
 Python中提供了存储多个对象的容器,主要为列表,字典或集合.列表一般用于存储有序数据;字典则是用于存储无需数据;集合则是与字典类似,但其用于存储无序且不允许重复元素的数据.
 
@@ -87,7 +87,7 @@ print(holiday[1,3])
 
 <a id="orgc8c4435"></a>
 
-## 2.3 Sequence
+## Sequence
 
 Python中给出了三种不同的序列类型:字符串,列表和元组.序列指有序的数据结构,因此他们可以按整数下标进行索引,同时可以获取其长度.
 
