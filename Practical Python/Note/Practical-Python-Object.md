@@ -2,9 +2,8 @@
 title: Pratical Python-Object
 date: 2025-10-10 16:46:53
 tags:
-    - Computer Science
     - Python
-categories: Python
+categories: Practical Python
 mathjax: true
 ---
 

@@ -2,9 +2,8 @@
 title: Pratical Python-Modules
 date: 2025-12-12 15:58:08
 tags:
-    - Computer Science
     - Python
-categories: Python
+categories: Practical Python
 mathjax: true
 ---
 

@@ -2,9 +2,8 @@
 title: Pratical Python-List, File and Functions
 date: 2025-09-12 19:12:35
 tags:
-    - Computer Science
     - Python
-categories: Python
+categories: Practical Python
 mathjax: true
 ---
 

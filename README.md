@@ -15,7 +15,10 @@
 - 第1章: [引言](/Practical%20Python/Note/Practical-Python-Intro.md) [字符串](/Practical%20Python/Note/String.md) [正则表达式 ](/Practical%20Python/Note/Practical-Python-Regular.md) [列表,文件和函数](/Practical%20Python/Note/Practical-Python-List.md)
 - 第2章: [数据类型](/Practical%20Python/Note/Practical-Python-Datatype.md) [容器和序列](/Practical%20Python/Note/Practical-Python-Container.md) [Collection](/Practical%20Python/Note/Practical-Python-Collection.md) [对象](/Practical%20Python/Note/Practical-Python-Object.md)
 - 第3章: [函数与异常](/Practical%20Python/Note/Practical-Python-Functions.md) [模块](/Practical%20Python/Note/Practical-Python-Modules.md)
-- 第4章: [类](/Practical%20Python/Note/Practical-Python-Class.md)
+- 第4章: [类](/Practical%20Python/Note/Practical-Python-Class.md) [多继承和MRO](/Practical%20Python/Note/Practical-Python-MultiIn.md) [特殊方法](/Practical%20Python/Note/Practical-Python-Special.md)
+- 第5章: [对象](/Practical%20Python/Note/Practical-Python-Object.md) [封装](/Practical%20Python/Note/Practical-Python-Encap.md)
+- 第6章:  [迭代器和生成器](/Practical%20Python/Note/Practical-Python-Generator.md) [协程](/Practical%20Python/Note/Practical-Python-Coroutine.md)  [生产/消费者问题和管道](/Practical%20Python/Note/Practical-Python-Producer.md) 
+- 第7章: [可变参数与匿名函数](/Practical%20Python/Note/Practical-Python-Anony.md) [闭包](/Practical%20Python/Note/Practical-Python-Closure.md) [静态方法和类方法](/Practical%20Python/Note/Practical-Python-Static.md) 
 
 ## 更新日程
 
@@ -23,3 +26,4 @@
 
 - 2025.10.10 上传Chapter1和Chapter2
 - 2025.12.16 上传Chapter3和Chapter4Sec1和Sec2
+- 2026.1.3 上传Chapter4剩余部分以及Chapter5,6,7的代码及笔记

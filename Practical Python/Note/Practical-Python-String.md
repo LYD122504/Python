@@ -2,9 +2,8 @@
 title: Pratical Python-Strings
 date: 2025-09-03 21:42:15
 tags:
-    - Computer Science
     - Python
-categories: Python
+categories: Practical Python
 mathjax: true
 ---
 

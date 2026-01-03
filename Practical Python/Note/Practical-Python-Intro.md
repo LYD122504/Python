@@ -2,9 +2,9 @@
 title: Pratical Python-Introduction to Python
 date: 2025-09-03 21:39:58
 tags:
-    - Computer Science
     - Python
-categories: Python
+categories: Practical Python
+mathjax: true
 ---
 
 本笔记完全基于David Beazley的Python教程-[Practical Python](https://dabeaz-course.github.io/practical-python/Notes/Contents.html).

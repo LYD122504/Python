@@ -2,9 +2,8 @@
 title: Pratical Python-Regular expression
 date: 2025-09-07 15:52:35
 tags:
-    - Computer Science
     - Python
-categories: Python
+categories: Practical Python
 mathjax: true
 ---
 

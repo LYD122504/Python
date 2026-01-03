@@ -2,9 +2,8 @@
 title: Pratical Python-Functions and Error
 date: 2025-10-21 19:50:33
 tags:
-    - Computer Science
     - Python
-categories: Python
+categories: Practical Python
 mathjax: true
 ---
 

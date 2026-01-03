@@ -2,15 +2,14 @@
 title: Practical Python-Class
 date: 2025-12-15 15:14:04
 tags:
-    - Computer Science
     - Python
-categories: Python
+categories: Practical Python
 mathjax: true
 ---
 
 本笔记完全基于David Beazley的Python教程-[Practical Python](https://dabeaz-course.github.io/practical-python/Notes/Contents.html).
 
-### Introducing Classes
+## Introducing Classes
 
 面向对象编程(Object Oriented Programming)指将代码用对象组合的方式拆分.其中对象中包含数据(属性)和行为(应用在对象的方法).Python提供了class语句用来定义新对象,
 
@@ -115,7 +114,7 @@ print(d._BB__name)
 
 <a id="org5bd1a9f"></a>
 
-### Inheritance
+## Inheritance
 
 继承则可以对现有的对象做特殊化修改.
 
