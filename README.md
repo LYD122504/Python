@@ -19,11 +19,22 @@
 - 第5章: [对象](/Practical%20Python/Note/Practical-Python-Object.md) [封装](/Practical%20Python/Note/Practical-Python-Encap.md)
 - 第6章:  [迭代器和生成器](/Practical%20Python/Note/Practical-Python-Generator.md) [协程](/Practical%20Python/Note/Practical-Python-Coroutine.md)  [生产/消费者问题和管道](/Practical%20Python/Note/Practical-Python-Producer.md) 
 - 第7章: [可变参数与匿名函数](/Practical%20Python/Note/Practical-Python-Anony.md) [闭包](/Practical%20Python/Note/Practical-Python-Closure.md) [静态方法和类方法](/Practical%20Python/Note/Practical-Python-Static.md) 
+- 第8章: [测试](/Practical%20Python/Note/Practical-Python-Test.md) [日志](/Practical%20Python/Note/Practical-Python-Logging.md) [调试](/Practical%20Python/Note/Practical-Python-Debug.md) 
+- 第9章: [包](/Practical%20Python/Note/Practical-Python-Pack.md) 
+- 完整笔记PDF:[Practical Python](/Practical%20Python/Note/Practical-Python.pdf) 
 
 ## 更新日程
 
 ### Pratical Python
 
 - 2025.10.10 上传Chapter1和Chapter2
+
 - 2025.12.16 上传Chapter3和Chapter4Sec1和Sec2
+
 - 2026.1.3 上传Chapter4剩余部分以及Chapter5,6,7的代码及笔记
+
+- 2026.1.4 上传Chapter8以及Chapter9的代码及笔记.
+
+- 2025.10.10-2026.1.4 完成全部Practical Python代码和笔记
+
+  

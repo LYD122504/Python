@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.py
+pack/__init__.py
+pack/fileparse.py
+pack/new_Portfolio.py
+pack/pcost.py
+pack/portfolio.py
+pack/report.py
+pack/stock.py
+pack/tableformatter.py
+pack/typedproperty.py
+porty.egg-info/PKG-INFO
+porty.egg-info/SOURCES.txt
+porty.egg-info/dependency_links.txt
+porty.egg-info/top_level.txt
