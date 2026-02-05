@@ -5,6 +5,7 @@
 ## 所用的资料
 
 1. David Beazley教授的 [实用Python教程](https://dabeaz-course.github.io/practical-python/)
+1. David Beazley教授的 [进阶Python教程](https://github.com/dabeaz-course/python-mastery)
 
 ## 目录
 
@@ -21,20 +22,24 @@
 - 第7章: [可变参数与匿名函数](/Practical%20Python/Note/Practical-Python-Anony.md) [闭包](/Practical%20Python/Note/Practical-Python-Closure.md) [静态方法和类方法](/Practical%20Python/Note/Practical-Python-Static.md) 
 - 第8章: [测试](/Practical%20Python/Note/Practical-Python-Test.md) [日志](/Practical%20Python/Note/Practical-Python-Logging.md) [调试](/Practical%20Python/Note/Practical-Python-Debug.md) 
 - 第9章: [包](/Practical%20Python/Note/Practical-Python-Pack.md) 
-- 完整笔记PDF:[Practical Python](/Practical%20Python/Note/Practical-Python.pdf) 
+- 完整笔记PDF:[Practical Python](/Practical%20Python/Note/Practical-Python.pdf)
 
-## 更新日程
+### 进阶Python笔记
+
+- 第1,2章: [数据处理](/Advanced%20Python/Note/Advanced-Python-Data.md)
+- 第3章: [类与对象](/Advanced%20Python/Note/Advanced-Python-Object.md)
+
+## 更新日程	
 
 ### Pratical Python
 
 - 2025.10.10 上传Chapter1和Chapter2
-
 - 2025.12.16 上传Chapter3和Chapter4Sec1和Sec2
-
 - 2026.1.3 上传Chapter4剩余部分以及Chapter5,6,7的代码及笔记
-
 - 2026.1.4 上传Chapter8以及Chapter9的代码及笔记.
-
 - 2025.10.10-2026.1.4 完成全部Practical Python代码和笔记
 
-  
+### Advanced Python
+
+- 2026.02.05 上传前三章的代码和笔记
+
