@@ -29,8 +29,8 @@ def f(x,*args):
     print("x =", x)
     print("args =", args)
     print(type(args))
-    f(1,2,3,4)
-    f(1)
+f(1,2,3,4)
+f(1)
 ```
 
 所有未被显式命名的位置参数会被按顺序收集为一个元组,这样的\*args是一种剩余参数捕获机制.这里我们要解释一下元组在这里的意义,因为参数在语义上是不可变输入,tuple强化了只读,结构化输入的概念,避免调用者误以为可以在函数内修改调用参数.这样的参数绑定发生在函数调用阶段,而不是函数体执行阶段.换言之,在进入函数体之前,解释器已经完成了参数数量校验,参数分流并构造出tuple.
@@ -43,8 +43,8 @@ def g(x,t,**kwargs):
     print("t =", t)
     print("kwargs =", kwargs)
     print(type(kwargs))
-    g(2,3,flag=True,mode='fast',header='debug')
-    g(5,6)
+g(2,3,flag=True,mode='fast',header='debug')
+g(5,6)
 ```
 
 所有没有被显式接收的关键字参数都被打包成一个字典.字典是因为关键字其实纯天然就有键值对.
@@ -55,8 +55,8 @@ def g(x,t,**kwargs):
 def f(*args,**kwargs):
     print("args =", args)
     print("kwargs =", kwargs)
-    f(1,2,3,flag=True,mode='fast')
-    f()
+f(1,2,3,flag=True,mode='fast')
+f()
 ```
 
 这种一般出现在我们在写一个封装函数,我们并不关心具体参数,但是我们必须要把参数完整的转移给底层函数,如果我们不利用\*arg/\*\*kwargs,那么我们就要在外层函数中复制底层函数的参数列表,那么他的适用性就受到了极大限制.

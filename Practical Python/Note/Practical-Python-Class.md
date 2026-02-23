@@ -15,12 +15,12 @@ mathjax: true
 
 ```python
 class Point:
-  def __init__(self,x,y):
-    self.x=x
-    self.y=y
-  def move(self,dx,dy):
-    self.x+=dx
-    self.y+=dy
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def move(self,dx,dy):
+        self.x+=dx
+        self.y+=dy
 ```
 
 这里Python作为动态语言,与C++最为不同的一点是,Python的类属性可以在程序运行中随意添加,但是很不推荐这么做,会让程序显得十分杂乱.
@@ -33,28 +33,31 @@ class Point:
 
 ```python
 class Player:
-  def __init__(self,x,y):
-    self.x=x
-    self.y=y
-    self.health=100
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+        self.health=100
+
     def move(self,dx,dy):
-      self.x+=dx
-      self.y+=dy
+        self.x+=dx
+        self.y+=dy
+
     def left(self,amt):
-      self.move(-amt,0)
+        self.move(-amt,0)
+
     def damage(self,pts):
-      self.health-=pts
+        self.health-=pts
 ```
 
 2.类属性.这种属性是直接写在类体定义里面,这种属性不属于某个特定的实例,而是属于类的本身.在初始化函数中,调用类属性的方式与前面的self.name不同,而是需要用class.name的方式调用.
 
 ```python
 class Player:
-  counter=0
-  def __init(self,x,y):
-    self.x=x
-    self.y=y
-    Player.counter+=1
+    counter=0
+    def __init(self,x,y):
+        self.x=x
+        self.y=y
+        Player.counter+=1
 ```
 
 类属性可以在任何实例化对象中调用.其特点是所有实例对象都可以调用同一个值;类属性可以被任何实例访问,但是实例属性是可以命名与类属性同名的变量,这样的话他就会覆盖类属性,无法在该实例中调用相关类属性.
@@ -77,10 +80,11 @@ public:
 
 ```python
 class BB():
-  def __init__(self,name):
-    self.__name=name
-  def get_name(self):
-    return self.__name
+    def __init__(self,name):
+        self.__name=name
+
+    def get_name(self):
+        return self.__name
 ```
 
 这个\_\_开头的变量并不能通过类.\_\_name的方式调用,下面的代码可以展示
@@ -111,8 +115,7 @@ print(d._BB__name)
 
 类可以视作一组对实例执行各种操作的函数.实例则指代码中实际操作的对象.实例方法指对对象实例的方法.如果实例方法中需要处理对象中的属性,那么对象本身一般以第一个参数的方式传输.虽然我们常见的传输对象本身使用的是self,不过实际上这个只是约定俗成的约定,可以用其他的.这是因为类只是创建属性的容器,而不是变量的查找域,换言之,虽然我们在类当中定义了某些属性,但是我们并不能在实例函数中直接使用变量名的方式调用,我们应该选择用类.变量名的方式调用.
 
-
-<a id="org5bd1a9f"></a>
+<a id="org1bf0203"></a>
 
 ## Inheritance
 
@@ -120,9 +123,9 @@ print(d._BB__name)
 
 ```python
 class Parent:
-  pass
+  	pass
 class Child(Parent):
-  pass
+  	pass
 ```
 
 这里我们称Child类为子类,派生类.Parent类为基类,超类.
@@ -131,20 +134,20 @@ class Child(Parent):
 
 ```python
 class Stock:
-  def __init__(self,name,shares,price):
-    self.name=name
-    self.shares=shares
-    self.price=price
-  def cost(self):
-    return self.shares*self.price
-  def sell(self,nshares):
-    self.shares-=nshares
+    def __init__(self, name, shares, price):
+        self.name = name
+        self.shares = shares
+        self.price = price
+    def cost(self):
+        return self.shares * self.price
+    def sell(self, nshares):
+        self.shares -= nshares
 class Mystock(Stock):
-  def panic(self):
-    self.sell(self.shares)# 添加新方法
-  def cost(self):#重新定义已有方法
-    actual_cost=super().cost()
-    return 1.25*actual_cost
+    def panic(self):
+        self.sell(self.shares)  # 添加新方法
+    def cost(self):  # 重新定义已有方法
+        actual_cost = super().cost()
+        return 1.25 * actual_cost
 ```
 
 上面的代码中提到了super.method().这个super()表示这个子类的父类,因此super.method()实际上就是调用父类的方法,可以用这种方法调用已有方法的不同版本.
@@ -153,11 +156,11 @@ class Mystock(Stock):
 
 ```python
 class MyStock(Stock):
-  def __init__(self,name,share,price,factor):
-    super().__init__(name,share,price)
-    self.factor=factor
-  def cost(self):
-    return self.factor*super().cost()
+    def __init__(self,name,share,price,factor):
+        super().__init__(name,share,price)
+        self.factor=factor
+    def cost(self):
+        return self.factor*super().cost()
 ```
 
 首先Python的变量必须初始化,因为他是一个动态语言,如果存在一个变量但他没有被赋值,程序是不可以为他分配内存空间的,所以我们如果希望在子类中添加新属性,我们其实需要重写子类的初始化函数,这里我们不对父类初始化的方式修改,就可以用super().\_\_init()的方式来初始化父类属性.
@@ -166,11 +169,11 @@ class MyStock(Stock):
 
 ```python
 class Shape:
-  pass
+    pass
 class Circle(Shape):
-  pass
+    pass
 class Triangle(Shape):
-  pass
+    pass
 ```
 
 继承的作用一般是用于构建可重用,可扩展的代码框架.如先定义一个类框架,也就是基类,他可以提供一个通用的方法,通过继承基类的方式,我们对子类做特殊化定制的部分.
@@ -179,9 +182,9 @@ class Triangle(Shape):
 
 ```python
 class Shape:
-  pass
+    pass
 class Circle(Shape):
-  pass
+    pass
 c = Circle()
 print(isinstance(c, Circle))   # True
 print(isinstance(c, Shape))    # True
@@ -199,7 +202,7 @@ print(type(c) is object) # False
 
 ```python
 class shape(object):
-  pass
+    pass
 ```
 
 object可以视作所有对象的父类.

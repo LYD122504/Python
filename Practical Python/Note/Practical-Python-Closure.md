@@ -53,7 +53,7 @@ import builtins
 dir(builtins)
 ```
 
-Python中只有模块(module),类(class)以及函数(def,lambda)才可以引入新的作用域,其他的代码如if/elif/else,try/except,for/while是不会引入新的作用域,也就是这些语句定义的变量,代码块外也是可以访问的.
+Python中只有模块(module),类(class)以及函数(def,lambda)才可以引入新的作用域,其他的代码如if/elif/else,try/except,for/while是不会引入新的作用域,也就是这些语句定义的变量,代码块外也是可以访问的.类其实构造的也不是作用域,而是一种临时命名空间,所以类中的函数仍然需要使用显式调用属性,因此类的作用域更多是基于函数形成的.
 
 ```python
 if True:

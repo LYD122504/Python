@@ -37,9 +37,9 @@ class A:
     x = 1
     def __init__(self,num):
         self.num=num
-                a = A(10)
-                a.x = 100     # 实例属性，遮蔽类属性
-                print(a.__dict__)   # 'x':100 'num':10
+a = A(10)
+a.x = 100     # 实例属性，遮蔽类属性
+print(a.__dict__)   # 'x':100 'num':10
 ```
 
 这里我们会发现实例属性里面没有初始化函数\_\_init\_\_,这是因为初始化函数其实是类的方法,实例是类的实例化,因此可以调用其,但其自身是没有函数的.所以从这里我们就可以知道Python为什么可以在程序运行中动态增加实例属性了,因为他的实例属性的存储实际上就是维护实例字典的过程,动态增加实例属性,只不过是修改实例字典的过程.并且每个实例都会具有自己独特的实例字典,有多少个实例就会存储多少个实例字典.
@@ -51,7 +51,7 @@ class A:
     x=1
     def func(self):
         return A.x
-    print(A.__dict__)
+print(A.__dict__)
 ```
 
 其结果比较多,我们稍微对每个结果加以解释.\_\_module\_\_映射的是类定义在的模块名,如果直接运行得到的就是\_\_main\_\_;类属性的对应关系,函数会返回一个<function>对象,后续我们会提到,不再赘述;\_\_dict\_\_他的返回不是一个字典,而是一个<attribute>对象,我们会在下面详细解释,他的作用是定义A的实例如何拥有并访问实例字典;\_\_weakref\_\_则表示一个弱引用机制.
@@ -72,8 +72,8 @@ __delete__(self,instance)
 class A:
     def f(self):
         return "method called"
-    a=A()
-    # a.f调用function的 __get__,返回bound method
+a=A()
+# a.f调用function的 __get__,返回bound method
 print(a.f())   # "method called"
 # 实例属性遮蔽non-datadescriptor
 a.f = "instance attribute"
@@ -91,9 +91,8 @@ class B:
         @property
     def x(self):
         return self._x
-    b=B()
-    print(b.x) # 10
-
+b=B()
+print(b.x) # 10
 b.__dict__['x'] = 999
 print(b.x)  # 10(data descriptor优先,实例字典被遮蔽)
 ```
@@ -106,9 +105,9 @@ print(b.x)  # 10(data descriptor优先,实例字典被遮蔽)
 class A:
     def f(self):
         return 1
-    a=A()
-    print(A.__dict__['f']) # function 对象
-    print(A.__dict__['f'].__get__(a,A) # bound method
+a=A()
+print(A.__dict__['f']) # function 对象
+print(A.__dict__['f'].__get__(a,A) # bound method
 ```
 
 这里的A.\_\_dict\_\_['f']是一个function对象,function对象在底层实现了一个\_\_get\_\_方法,他返回的会是一个绑定对象,因此前面说的a.f其实和如下代码一样

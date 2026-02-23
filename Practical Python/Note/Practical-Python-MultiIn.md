@@ -57,14 +57,14 @@ class LogginMixin:
 def log(self,msg):
     print(f"[LOG]:{msg}")
 class AuthMixin:
-def authenticate(self,user):
-    print(f"Authenticating {user}")
+    def authenticate(self,user):
+        print(f"Authenticating {user}")
 class User(LogginMixin,AuthMixin):
-def __init__(self,name):
-    self.name=name
-    u=User('Alice')
-    u.log("User created")
-    u.authenticate("Alice")
+    def __init__(self,name):
+        self.name=name
+u=User('Alice')
+u.log("User created")
+u.authenticate("Alice")
 ```
 
 第三种情况也是多重继承中最为复杂的菱形继承情况,我们先给出他的继承图结构如下:
@@ -79,23 +79,23 @@ def __init__(self,name):
 
 ```python
 class A:
-def foo(self):
-    print("Here is a A")
+    def foo(self):
+        print("Here is a A")
 class B(A):
-def foo(self):
-    print("Here is a B")
-    A.foo(self)
+    def foo(self):
+        print("Here is a B")
+        A.foo(self)
 class C(A):
-def foo(self):
-    print("Here is a C")
-    A.foo(self)
+    def foo(self):
+        print("Here is a C")
+        A.foo(self)
 class D(B,C):
-def foo(self):
-    print("Here is a D")
-    B.foo(self)
-    C.foo(self)
-    d=D()
-    d.foo()
+    def foo(self):
+        print("Here is a D")
+        B.foo(self)
+        C.foo(self)
+d=D()
+d.foo()
 ```
 
 我们希望的是在运行中类A只被调用一次,且类D不会影响类B和类C的继承顺序,并且有一个明确的方法调用顺序.在Python中这一方法解释顺序(MRO),他是存储在类中的\_\_mro\_\_属性中的.我们调用类D中的函数,会先在MRO中依次查找,直到第一次查找到同名函数,就会将其调用,并不会多次调用.这里我们从他的演变开始慢慢介绍其背后的C3线性化算法.
