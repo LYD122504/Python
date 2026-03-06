@@ -30,6 +30,7 @@
 - 第3章: [类与对象](/Advanced%20Python/Note/Advanced-Python-Object.md)
 - 第4章: [内置Python对象](/Advanced%20Python/Note/Advanced-Python-Inside.md)
 - 第5章: [函数](/Advanced%20Python/Note/Advanced-Python-Function.md)
+- 第6章: [操作代码](/Advanced%20Python/Note/Advanced-Python-Work.md)
 
 ## 更新日程	
 
@@ -45,4 +46,4 @@
 
 - 2026.02.05 上传前三章的代码和笔记
 - 2026.02.23 上传第四章和第五章的代码和笔记
-
+- 2026.03.06上传第六章代码笔记与第七章的代码
