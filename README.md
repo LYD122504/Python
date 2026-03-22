@@ -33,6 +33,8 @@
 - 第6章: [操作代码](/Advanced%20Python/Note/Advanced-Python-Work.md)
 - 第7章: [元编程](/Advanced%20Python/Note/Advanced-Python-MetaProgramming.md)
 - 第8章: [生成器](/Advanced%20Python/Note/Advanced-Python-Generator.md)
+- 第8章: [包与模块](/Advanced%20Python/Note/Advanced-Python-Module.md)
+- 完整笔记PDF: [Advanced Python](/Advanced%20Python/Note/advanced_python.pdf)
 
 ## 更新日程	
 
@@ -50,3 +52,5 @@
 - 2026.02.23 上传第四章和第五章的代码和笔记
 - 2026.03.06上传第六章代码笔记与第七章的代码笔记
 - 2026.03.19 上传第八章的代码笔记
+- 2026.03.22 上传第九章的代码笔记
+- 2026.02.05-2026.03.22 完成全部Advanced Python代码和笔记
