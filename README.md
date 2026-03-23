@@ -27,14 +27,27 @@
 ### 进阶Python笔记
 
 - 第1,2章: [数据处理](/Advanced%20Python/Note/Advanced-Python-Data.md)
+
 - 第3章: [类与对象](/Advanced%20Python/Note/Advanced-Python-Object.md)
+
 - 第4章: [内置Python对象](/Advanced%20Python/Note/Advanced-Python-Inside.md)
+
 - 第5章: [函数](/Advanced%20Python/Note/Advanced-Python-Function.md)
+
 - 第6章: [操作代码](/Advanced%20Python/Note/Advanced-Python-Work.md)
+
 - 第7章: [元编程](/Advanced%20Python/Note/Advanced-Python-MetaProgramming.md)
+
 - 第8章: [生成器](/Advanced%20Python/Note/Advanced-Python-Generator.md)
+
 - 第8章: [包与模块](/Advanced%20Python/Note/Advanced-Python-Module.md)
+
 - 完整笔记PDF: [Advanced Python](/Advanced%20Python/Note/advanced_python.pdf)
+
+###  智能仓储笔记
+
+  - 项目简介: [项目简介](/Project/Note/Readme.md)
+  - 项目知识: [项目笔记](/Project/Note/Note.md)
 
 ## 更新日程	
 
@@ -54,3 +67,7 @@
 - 2026.03.19 上传第八章的代码笔记
 - 2026.03.22 上传第九章的代码笔记
 - 2026.02.05-2026.03.22 完成全部Advanced Python代码和笔记
+
+###  智能仓储项目
+
+- 2026.03.23 上传智能仓储项目代码
